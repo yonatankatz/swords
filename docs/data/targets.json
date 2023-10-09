@@ -19,6 +19,26 @@
         "lat": 31.538798762310847,
         "lng": 34.49508684961887
       }
+    },
+    {
+      "source": "חדשות מהשטח בטלגרם",
+      "link": "https://t.me/Yediotnews/80617",
+      "media_internal_link": "data/3.gif",
+      "title": "הבנק האיסלאמי",
+      "coordinates" : {
+        "lat": 31.515615459461774,
+        "lng": 34.449455074481115
+      }
+    },
+    {
+      "source": "חדשות מהשטח בטלגרם",
+      "link": "https://t.me/Yediotnews/80617",
+      "media_internal_link": "data/4.png",
+      "title": "רפיח",
+      "coordinates" : {
+        "lat": 31.298424423535376,
+        "lng": 34.24326747383481
+      }
     }
   ]
 }
