@@ -3,61 +3,13 @@
 <head>
     <title>Google Maps Example</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxCKSoBJTUpkROhSLOgNcKkOJocUiQHb4"></script>    
-    <script src="/js/script.js"></script>
-    <script src="/js/data_loader.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    
+    <script src="/js/utils.js"></script>
 </head>
 <body>
     <!-- Your map will be displayed here -->
     <div id="map" style="width: 100%; height: 98vh;"></div>
-    <script>
-        // Initialize the map
-        function initMap() {
-          // Define the coordinates for the center of the map
-          
-          const mapCenter = { lat: 31.4100659, lng: 34.211635 }; // Example: San Francisco, CA
-      
-          // Create a new map instance and set its center and zoom level
-          const map = new google.maps.Map(document.getElementById("map"), {
-            center: mapCenter,
-            zoom: 10.83, // Adjust the zoom level as needed
-            gestureHandling: "greedy",
-          });
-      
-          const markers = [
-          { lat: 31.427893084378482, lng: 34.37592153173533 },
-          { lat: 31.418053677107668, lng: 34.353205446794874 },
-          { lat: 31.500407097132214, lng: 34.43158149461433 },
-          { lat: 31.48268352052024, lng: 34.41767696562316 },
-          { lat: 31.45073496394814, lng: 34.39269435710077 },
-        ];
-
-        const infoWindows = [];
-
-          markers.forEach((marker) => {
-            const tutu = new google.maps.Marker({
-                position: marker,
-                map: map,
-                title: 'איזור הפצצה'
-            });
-
-            const infoWindow = new google.maps.InfoWindow({
-                content: "<img src='rooster.gif' alt='Image 1' width='200' height='150'>",
-            });
-
-            tutu.addListener("click", () => {
-                infoWindows.forEach(iw => iw.close());
-                infoWindow.open(map, tutu);
-            });
-
-            infoWindows.push(infoWindow);
-        });
-
-        }
-        window.onload = function () {
-         initMap();
-        };
-      </script> 
+    <script src="/js/script.js"></script>
+    <script src="/js/data_loader.js"></script>
 </body>
 </html>
