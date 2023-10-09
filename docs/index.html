@@ -32,12 +32,25 @@
           { lat: 31.45073496394814, lng: 34.39269435710077 },
         ];
 
+        const infoWindows = [];
+
           markers.forEach((marker) => {
-            new google.maps.Marker({
+            const tutu = new google.maps.Marker({
                 position: marker,
                 map: map,
                 title: 'איזור הפצצה'
             });
+
+            const infoWindow = new google.maps.InfoWindow({
+                content: "<img src='rooster.gif' alt='Image 1' width='200' height='150'>",
+            });
+
+            tutu.addListener("click", () => {
+                infoWindows.forEach(iw => iw.close());
+                infoWindow.open(map, tutu);
+            });
+
+            infoWindows.push(infoWindow);
         });
 
         }
