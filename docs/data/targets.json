@@ -1,0 +1,14 @@
+{
+  "targets": [
+    {
+      "source": "חדשות מהשטח בטלגרם",
+      "link": "https://t.me/Yediotnews/80704",
+      "media_internal_link": "data/1.gif",
+      "title": "תקיפת צה\"ל במחנה א-שאטי",
+      "coordinates" : {
+        "lat": 31.537410430971555,
+        "lng": 34.45366743760739
+      }
+    }
+  ]
+}
